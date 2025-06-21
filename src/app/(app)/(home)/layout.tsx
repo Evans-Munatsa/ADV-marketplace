@@ -21,8 +21,9 @@ const Layout = async ({children}: Props) => {
         where: {
             parent: {
                 exists: false,
-            }
-        }
+            },
+        },
+        sort: "name"
     })
 
     const formattedData = data.docs.map((doc) => ({
