@@ -36,7 +36,8 @@ export const SubcategoryMenu = ({
                         {category.subcategories?.map((Subcategory: Category) => (
                             <Link 
                                 key={Subcategory.slug} 
-                                href="/"
+                                // http://localhost:3000/accessories/screen-protectors
+                                href={`/${category.slug}/${Subcategory.slug}`}
                                 className="w-full text-left p-4 hover:bg-black hover:text-white flex justify-between items-center underline font-medium"
                             >
                                 {Subcategory.name}
