@@ -44,7 +44,6 @@ const NavbarItem = ({
 const NavbarItems = [
     {href: "/", children: "Home"},
     {href: "/about", children: "About"},
-    {href: "/features", children: "Features"},
     {href: "/contact", children: "Contact"},
 ]
 
